@@ -10,16 +10,22 @@
  import { ScrollView, Text, View, Image, TextInput } from 'react-native';
 
  import Cat from './components/Cat.js';
+import CatApp from './components/CatApp.js';
  import ClassCat from './components/ClassCat.js';
+import HungryCat from './components/HungryCat.js';
  
  const YourApp = () => {
    return (
     <ScrollView>
-        <Cat />
+        {/* <Cat name="Haruuu" />
+        <Cat name="Hummus" />
         <ClassCat />
+        <CatApp name="Pepe" /> */}
+
+        <HungryCat name="Paranoid" />
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <Text>
-          Try editing me!!! 🎉
+          Try editing me!!2 🎉
         </Text>
       </View>
       <Text>Some Text</Text>

@@ -5,10 +5,11 @@ const upperName = (name) => {
     return name.toUpperCase();
 }
 
-const Cat = () => {
+const Cat = (props) => {
     const name = "Haru";
     return (
-        <Text>Hello, I'm {upperName(name)} the cat!</Text>
+        // <Text>Hello, I'm {upperName(name)} the cat!</Text>
+        <Text>Hello, I'm {upperName(props.name)} the cat!</Text>
     );
 }
 
