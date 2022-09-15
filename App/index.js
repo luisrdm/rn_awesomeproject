@@ -13,6 +13,7 @@
 import CatApp from './components/CatApp.js';
  import ClassCat from './components/ClassCat.js';
 import HungryCat from './components/HungryCat.js';
+import TextInputName from './components/TextInputName.js';
  
  const YourApp = () => {
    return (
@@ -49,6 +50,7 @@ import HungryCat from './components/HungryCat.js';
           }}
           defaultValue="Type here"
         />
+        <TextInputName onChange = "onChangeText"/>
       </View>
     </ScrollView>
    );
