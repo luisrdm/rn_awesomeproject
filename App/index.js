@@ -7,52 +7,65 @@
  */
 
  import React from 'react';
- import { ScrollView, Text, View, Image, TextInput } from 'react-native';
+ import { ScrollView, Text, View, Image, TextInput, FlatList } from 'react-native';
 
  import Cat from './components/Cat.js';
 import CatApp from './components/CatApp.js';
  import ClassCat from './components/ClassCat.js';
+import FlatListBasics from './components/FlatListBasics.js';
 import HungryCat from './components/HungryCat.js';
+import SectionListBasics from './components/SectionListBasics.js';
 import TextInputName from './components/TextInputName.js';
  
  const YourApp = () => {
    return (
-    <ScrollView>
-        {/* <Cat name="Haruuu" />
-        <Cat name="Hummus" />
-        <ClassCat />
-        <CatApp name="Pepe" /> */}
 
-        <HungryCat name="Paranoid" />
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>
-          Try editing me!!2 🎉
-        </Text>
-      </View>
-      <Text>Some Text</Text>
-      <View>
-        <Text>Text within a view</Text>
-        <Image 
-          source={{
-            uri: 'https://reactnative.dev/docs/assets/p_cat2.png'
-          }} 
-          style={{
-            width: 200,
-            height: 200,
-            borderColor: "#ff0000"
-          }}
-        />
-        <TextInput
-          style = {{
-            height: 40,
-            borderColor: "gray",
-            borderWidth: 1
-          }}
-          defaultValue="Type here"
-        />
-        <TextInputName onChange = "onChangeText"/>
-      </View>
-    </ScrollView>
+   <SectionListBasics>
+
+      {/*
+     <FlatListBasics>
+        <SafeAreaView>
+          <ScrollView>
+
+              <HungryCat name="Paranoid" />
+            <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+              <Text>
+                Try editing me!!3 🎉
+              </Text>
+            </View>
+            <Text>Some Text</Text>
+            <View>
+              <Text>Text within a view</Text>
+              <Image 
+                source={{
+                  uri: 'https://reactnative.dev/docs/assets/p_cat2.png'
+                }} 
+                style={{
+                  width: 200,
+                  height: 200,
+                  borderColor: "#ff0000"
+                }}
+              />
+              <TextInput
+                style = {{
+                  height: 40,
+                  borderColor: "gray",
+                  borderWidth: 1
+                }}
+                defaultValue="Type here"
+              />
+              <TextInputName onChange = "onChangeText"/>
+            </View>
+          </ScrollView>
+          <Text>FlatList follows...</Text>
+          <Text>after FlatList...</Text>
+
+        </SafeAreaView>
+
+        </FlatListBasics> */}
+        </SectionListBasics>
+
+
    );
  }
  
